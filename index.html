@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Janux Digital</title>
+    
+    <!-- Favicon & Fonts -->
+    <link rel="icon" type="image/png" href="assets/favico.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <!--pages-->
+    
+</head>
+<body>
+
+    <!-- =========================================
+         HEADER & NAVIGATION
+    ========================================= -->
+    <header>
+        <div class="container header-content">
+            
+            <!-- Smart 2-Image Logo Setup -->
+            <div class="logo">
+                <img src="assets/logodark.png" class="logo-dark" alt="Janux Digital">
+                <img src="assets/logolight.png" class="logo-light" alt="Janux Digital">
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 20px;">
+
+                <!-- Sliding Theme Toggle -->
+                <button id="themeToggle" class="theme-switch" aria-label="Toggle Theme">
+                    <span class="switch-slider"></span>
+                    <span class="switch-icon sun">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    </span>
+                    <span class="switch-icon moon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </span>
+                </button>
+                
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#experience">Work Experience</a></li>
+                    <li><a href="services.html">Design Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================================
+         HERO SECTION
+    ========================================= -->
+    <!-- =========================================
+     HERO SECTION
+========================================= -->
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="hero">
+            <div class="hero-text">
+                <span class="hero-welcome">Welcome</span>
+                <h1>Strategic Graphic<br><span style="color: #5BCD5A;">Designer</span></h1>
+                <p class="hero-desc">
+                    I'm Janaka Wijerathna, a Senior Graphic & Commercial Designer with 7+ years of experience crafting high-impact marketing visuals, publication layouts, and digital assets. I help businesses and brands turn complex ideas into visually compelling, market-ready assets that drive engagement and sales.
+                </p>
+                
+                <a href="#portfolio" class="btn-primary">
+                    View Work 
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+
+                <div class="hero-stats">
+                    <div class="hero-stat-box">
+                        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
+                        <h3><span class="counter" data-target="1795">0</span>+</h3>
+                        <p>Projects<br>Completed</p>
+                    </div>
+                    <div class="hero-stat-box">
+                        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>
+                        <h3><span class="counter" data-target="580">0</span>+</h3>
+                        <p>Clients<br>Happy</p>
+                    </div>
+                    <div class="hero-stat-box">
+                        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
+                        <h3><span class="counter" data-target="4">0</span>.9<span class="star">★</span></h3>
+                        <p>Average<br>Satisfaction</p>
+                    </div>
+                    <div class="hero-stat-box">
+                        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></div>
+                        <h3><span class="counter" data-target="2018">0</span></h3>
+                        <p>Year<br>Established</p>
+                    </div>
+                    <div class="hero-stat-box">
+                        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg></div>
+                        <h3><span class="counter" data-target="20">0</span>+</h3>
+                        <p>Countries<br>Worldwide</p>
+                    </div>
+                    <div class="hero-stat-box">
+                        <div class="stat-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></div>
+                        <h3><span class="counter" data-target="4">0</span>+</h3>
+                        <p>Language<br>Managed</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-wrapper">
+                    <img src="assets/pro3.webp" alt="Janaka Wijerathna" onerror="this.src='https://placehold.co/300x300?text=Janaka+Wijerathna';">
+                    <div class="floating-brand-text">
+                        Good<br>Design<br>Builds<br>Brands
+                        <svg class="swoosh" viewBox="0 0 100 20" preserveAspectRatio="none">
+                            <path d="M0,15 Q40,25 100,5" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- =========================================
+         TESTIMONIALS SECTION
+    ========================================= -->
+    <section class="testimonials-area">
+        <div class="container">
+            
+            <div class="testimonials-header">
+                <div class="testimonials-title">
+                    <span class="section-subtitle">Client Feedback</span>
+                    <h2>What They <span style="color: var(--accent-green);">Say</span></h2>
+                </div>
+                
+                <div class="testimonials-nav">
+                    <div class="swiper-button-prev nav-btn"></div>
+                    <div class="swiper-button-next nav-btn"></div>
+                </div>
+            </div>
+            
+            <div class="slider-wrapper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"We have worked with Janaka for the past 7+ years and have been extremely satisfied. Not only is the work itself great, but Janaka is so responsive and easy to work with. He listens to our needs and feedback..."</p>
+                                <a href="https://www.upwork.com/freelancers/~01122ec8914e230def?mp_source=share" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://media.licdn.com/dms/image/v2/C4E03AQFXm6LwBrX3rg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516306733027?e=1790812800&v=beta&t=82mhDSfyoXkx2w89iVqmI0HTx4kk16-4tIXvmm7ELgc" alt="Client">
+                                    <div class="client-details">
+                                        <h4>Kenneth S.</h4>
+                                        <p>Founder & CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"JanuX helped us greatly to let our vision become reality. Great communication, fast delivery, excellent."</p>
+                                <a href="https://99designs.com/profiles/januxdigital/reviews/874272" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://99designs.com/avatars/users/5403821/65" alt="Client">
+                                    <div class="client-details">
+                                        <h4>Egbert Minnaar</h4>
+                                        <p>CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"JanuX developed transformed our data into a beautifully laid-out report. The charts were made to look inviting, and he collaborated closely with us to ensure relevant images were used..."</p>
+                                <a href="https://99designs.com/profiles/januxdigital/reviews/826194" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/67fd2666027193104a475840/9c37fb3f-4a46-42f6-9124-ea111e60ad9b/BVT-001-Logo_v1_rgb.png?format=1500w" alt="Client">
+                                    <div class="client-details">
+                                        <h4>Board Veritas</h4>
+                                        <p>Marketing Director</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"Janu was wonderful as always, great eye for design and good communication"</p>
+                                <a href="https://99designs.com/profiles/januxdigital/reviews/785370" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://media.licdn.com/dms/image/v2/D4E03AQHCgyg-KEsEzA/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1683924470434?e=1790812800&v=beta&t=JVUOpt4yOyMf4ErFzfR23QCCJ7blj23YFkG6-j2_Rg4" alt="Client">
+                                    <div class="client-details">
+                                        <h4>Yvette Montero Salvatico</h4>
+                                        <p>Co-Founder and Managing Director, TFSX</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"Amazing Great job you are the best! Thanks"</p>
+                                <a href="https://99designs.com/profiles/januxdigital/reviews/748592" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://media.licdn.com/dms/image/v2/D5603AQHeoz5Ls4tZDQ/profile-displayphoto-scale_200_200/B56Zk1gajLHMAY-/0/1757539314423?e=1790812800&v=beta&t=vbSBpNS975s7kAJ09BJBC09U3G9lrDmxBzV1eva2a8s" alt="Client">
+                                    <div class="client-details">
+                                        <h4>Wayne H.</h4>
+                                        <p>Founder and CEO, National Processing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"Designer setzt um, was wir von ihm forderten. Ist detailliert und engagiert. Wir werden ihn auf jeden Fall wieder buchen"</p>
+                                <a href="https://99designs.com/profiles/januxdigital/reviews/732584" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://99designs.com/avatars/users/5242639/48" alt="Client">
+                                    <div class="client-details">
+                                        <h4>FAENORA GmbH</h4>
+                                        <p>Founder and CEO</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"JanuX is a great designer! Very easy to work with, responsive, and of course creative. I would recommend them for anyones future designs."</p>
+                                <a href="https://99designs.com/profiles/januxdigital/reviews/859148" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://99designs.com/avatars/users/11969440/65" alt="Client">
+                                    <div class="client-details">
+                                        <h4>Ahonkhai Lab</h4>
+                                        <p>SPACES</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div class="testimonial-card">
+                                <div class="stars">★★★★★</div>
+                                <p>"JanuX is always responsive and does high quality work. I've worked with him multiple times already and will use him again for future work."</p>
+                                <a href="https://99designs.com/profiles/januxdigital/reviews/843143" class="original-link">View Original Review ↗</a>
+                                <div class="client-info">
+                                    <img src="https://99designs.com/avatars/users/4879529/65" alt="Client">
+                                    <div class="client-details">
+                                        <h4>Matrp</h4>
+                                        <p>MDQ Management</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div> 
+            </div>
+
+            <!-- Company Logo Continuous Slider -->
+            <div class="logo-slider-area">
+                <div class="swiper logoSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide logo-slide"><img src="https://www.senseiprojectsolutions.com/wp-content/uploads/2024/09/sensei-2.png" alt="Sensei"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://reentryessentials.org/storage/settings/footer-logo-177383342869ba8cd481566.png" alt="RE"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://www.faenora.gmbh/wp-content/uploads/2026/04/Log_weiss-removebg-preview-e1775649048444-2.png.webp" alt="Faenora"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://faqpkg.com/wp-content/uploads/2023/09/png-04.png" alt="Faq Pkg"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://hirerfaq.com/wp-content/uploads/2025/12/Hirer-Faq-01-scaled.png" alt="Hirer-Faq"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://www.usnews.com/object/image/00000179-d827-dcb0-ab7f-feafe0700000/210604-national-processing-logo-submitted.png?update-time=1622829335886&size=responsiveFlow300" alt="National-Processing"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://esterakeyless.wpenginepowered.com/wp-content/uploads/2025/06/Header-logo_Keyless_.png" alt="Keyless"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://get.ser.vi/assets/images/servi-logo-black.png" alt="Servi"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://sabni.nl/wp-content/uploads/2023/04/SABstichting_logo_PMS_TRANSPARANT-1024x1000.png" alt="SAB"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://toastitnyc.com/wp-content/uploads/2025/11/toastitnyc-logo.png" alt="Toast It"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://www.mincka.com.au/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75" alt="Sensei"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://reentryessentials.org/storage/settings/footer-logo-177383342869ba8cd481566.png" alt="RE"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://www.faenora.gmbh/wp-content/uploads/2026/04/Log_weiss-removebg-preview-e1775649048444-2.png.webp" alt="Faenora"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://faqpkg.com/wp-content/uploads/2023/09/png-04.png" alt="Faq Pkg"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://hirerfaq.com/wp-content/uploads/2025/12/Hirer-Faq-01-scaled.png" alt="Hirer-Faq"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://www.usnews.com/object/image/00000179-d827-dcb0-ab7f-feafe0700000/210604-national-processing-logo-submitted.png?update-time=1622829335886&size=responsiveFlow300" alt="National-Processing"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://esterakeyless.wpenginepowered.com/wp-content/uploads/2025/06/Header-logo_Keyless_.png" alt="Keyless"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://get.ser.vi/assets/images/servi-logo-black.png" alt="Servi"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://sabni.nl/wp-content/uploads/2023/04/SABstichting_logo_PMS_TRANSPARANT-1024x1000.png" alt="SAB"></div>
+                        <div class="swiper-slide logo-slide"><img src="https://toastitnyc.com/wp-content/uploads/2025/11/toastitnyc-logo.png" alt="Toast It"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+    <!-- =========================================
+         WORK EXPERIENCE
+    ========================================= -->
+    <!-- Added inline styling to reduce the bottom margin and padding -->
+    <section id="experience" class="container work-experience-section" style="margin-bottom: 0px; padding-bottom: 0;">
+        <div class="work-exp-wrapper">
+             <!-- Right Side: Sticky Text Content -->
+            <div class="work-exp-text">
+                <span class="section-subtitle">Career Journey</span>
+                <h2>Work <br><span style="color: var(--accent-green);">Experience.</span></h2>
+                <p class="work-exp-desc">
+                    Over 7+ years, I have established a dominant presence across top-tier creative marketplaces, consistently ranking among elite global talent with thousands of completed projects and unmatched client satisfaction.
+                </p>
+            </div>
+            
+            <!-- Left Side: Interactive Expandable Cards -->
+            <div class="work-exp-cards" style="width: 100%;">
+                
+                <!-- 99designs Card -->
+                <div class="exp-hover-card card-99designs" style="width: 100%;">
+                    <div class="exp-card-header">
+                        <div class="exp-logo-title">
+                            <div class="exp-logo" style="background: #ffffff;">
+                                <img src="https://assets.99static.com/workbench/assets/asimov/images/og-image-80cfd8beb6.png" alt="99designs" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="exp-title-text">
+                                <h3>99designs</h3>
+                                <p>Mid Level Designer Certification <span class="dot-sep">•</span> Since Aug 2018</p>
+                            </div>
+                        </div>
+                        <!-- View Profile Button Removed -->
+                    </div>
+                    <div class="exp-stats-container">
+                        <div class="exp-stats-grid-4">
+                            <div class="stat-box-ss"><strong>85</strong><span>Contests Won</span></div>
+                            <div class="stat-box-ss"><strong>198</strong><span>1-to-1 Projects</span></div>
+                            <div class="stat-box-ss"><strong>4.99★</strong><span>Positive Rating</span></div>
+                            <div class="stat-box-ss"><strong>96%</strong><span>Response Rate</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DesignCrowd Card -->
+                <div class="exp-hover-card card-designcrowd" style="width: 100%;">
+                    <div class="exp-card-header">
+                        <div class="exp-logo-title">
+                            <div class="exp-logo" style="background: #ffffff;">
+                                <img src="https://cf1.panelplace.com/public/images/subpanel/logos/4598/1659092942.png" alt="DesignCrowd" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="exp-title-text">
+                                <h3>DesignCrowd</h3>
+                                <p>Freelance Designer <span class="dot-sep">•</span> Since Aug 2018</p>
+                            </div>
+                        </div>
+                        <!-- View Profile Button Removed -->
+                    </div>
+                    <div class="exp-stats-container">
+                        <div class="exp-stats-grid-4">
+                            <div class="stat-box-ss"><strong>#264</strong><span>Rank of 1.33M</span></div>
+                            <div class="stat-box-ss"><strong>90%</strong><span>Positive Rating</span></div>
+                            <div class="stat-box-ss"><strong>2502</strong><span>Submissions</span></div>
+                            <div class="stat-box-ss"><strong>111</strong><span>Site Average</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fiverr Card -->
+                <div class="exp-hover-card card-fiverr" style="width: 100%;">
+                    <div class="exp-card-header">
+                        <div class="exp-logo-title">
+                            <div class="exp-logo" style="background: #ffffff;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/Fiverr_Logo_fiverr.png" alt="Fiverr" style="width:100%; height:100%; border-radius:10px;">
+                            </div>
+                            <div class="exp-title-text">
+                                <h3>Fiverr</h3>
+                                <p>Level 2 Freelance Designer <span class="dot-sep">•</span> Since Jan 2019</p>
+                            </div>
+                        </div>
+                        <!-- View Profile Button Removed -->
+                    </div>
+                    <div class="exp-stats-container">
+                        <div class="exp-stats-grid-4">
+                            <div class="stat-box-ss"><strong>100%</strong><span>On-Time Delivery</span></div>
+                            <div class="stat-box-ss"><strong>134</strong><span>Orders Completed</span></div>
+                            <div class="stat-box-ss"><strong>4.9★</strong><span>Positive Rating</span></div>
+                            <div class="stat-box-ss"><strong>8%</strong><span>World Domination</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================
+         LONGTERM CLIENTS SECTION
+    ========================================= -->
+    
+    <section id="longterm-clients" class="container" style="margin-top: 0; padding-top: 0px;">
+        
+        <h2 style="margin-bottom: 30px;">Longterm Partnerships</h2>
+        
+        <div class="clients-row">
+            
+            <div class="client-tile" onclick="this.classList.toggle('tap-active')">
+                <div class="client-default">
+                    <div class="client-logo">
+                        <img src="https://www.senseiprojectsolutions.com/wp-content/uploads/2024/09/sensei-2.png" alt="sensei">
+                    </div>
+                    <h6>Sensei Project Solutions</h6>
+                </div>
+                <div class="client-hover-data">
+                    <p><strong>200+</strong> Projects<br>Completed</p>
+                    <div class="client-divider"></div>
+                    <p><strong>2019</strong> Worked<br>Since</p>
+                </div>
+            </div>
+
+            <div class="client-tile" onclick="this.classList.toggle('tap-active')">
+                <div class="client-default">
+                    <div class="client-logo">
+                        <img src="https://reentryessentials.org/storage/settings/footer-logo-177383342869ba8cd481566.png" alt="Reentry Essentials">
+                    </div>
+                    <h6>Reentry Essentials. inc</h6>
+                </div>
+                <div class="client-hover-data">
+                    <p><strong>370+</strong> Projects<br>Completed</p>
+                    <div class="client-divider"></div>
+                    <p><strong>2018</strong> Worked<br>Since</p>
+                </div>
+            </div>
+
+            <div class="client-tile" onclick="this.classList.toggle('tap-active')">
+                <div class="client-default">
+                    <div class="client-logo">
+                        <img src="https://faqpkg.com/wp-content/uploads/2023/09/png-04.png" alt="Faq packages">
+                    </div>
+                    <h6>Faq Packaging</h6>
+                </div>
+                <div class="client-hover-data">
+                    <p><strong>90+</strong> Projects<br>Completed</p>
+                    <div class="client-divider"></div>
+                    <p><strong>2020</strong> Worked<br>Since</p>
+                </div>
+            </div>
+
+            <div class="client-tile" onclick="this.classList.toggle('tap-active')">
+                <div class="client-default">
+                    <div class="client-logo">
+                        <img src="https://esterakeyless.wpenginepowered.com/wp-content/uploads/2025/06/Header-logo_Keyless_.png" alt="keyless">
+                    </div>
+                    <h6>Keyless.co</h6>
+                </div>
+                <div class="client-hover-data">
+                    <p><strong>16+</strong> Projects<br>Completed</p>
+                    <div class="client-divider"></div>
+                    <p><strong>2022</strong> Worked <br>Since</p>
+                </div>
+            </div>
+
+            <div class="client-tile" onclick="this.classList.toggle('tap-active')">
+                <div class="client-default">
+                    <div class="client-logo">
+                        <img src="https://tfsx.com/wp-content/themes/pgon-futuresschool-2021/assets/img/logo-tfsx.png" alt="tfsx">
+                    </div>
+                    <h6>The Future School</h6>
+                </div>
+                <div class="client-hover-data">
+                    <p><strong>115+</strong> Projects<br>Completed</p>
+                    <div class="client-divider"></div>
+                    <p><strong>2019</strong> Worked <br>Since</p>
+                </div>
+            </div>
+
+            <div class="client-tile" onclick="this.classList.toggle('tap-active')">
+                <div class="client-default">
+                    <div class="client-logo">
+                        <img src="https://nextlevelgrowth.com/wp-content/uploads/2024/06/NLG-Logo-Email-Signature.png" alt="nlg">
+                    </div>
+                    <h6>Next Level Growth</h6>
+                </div>
+                <div class="client-hover-data">
+                    <p><strong>75+</strong> Projects<br>Completed</p>
+                    <div class="client-divider"></div>
+                    <p><strong>2019</strong> Worked <br>Since</p>
+                </div>
+            </div>
+
+            <div class="client-tile" onclick="this.classList.toggle('tap-active')">
+                <div class="client-default">
+                    <div class="client-logo">
+                        <img src="https://www.mincka.com.au/_next/image?url=%2Fimages%2Flogo.png&w=256&q=75" alt="Mincka">
+                    </div>
+                    <h6>Mincka Engineering Pty Ltd.</h6>
+                </div>
+                <div class="client-hover-data">
+                    <p><strong>20+</strong> Projects<br>Completed</p>
+                    <div class="client-divider"></div>
+                    <p><strong>2021</strong> Worked<br>Since</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   
+    <!-- =========================================
+         CTA BANNER SECTION
+    ========================================= -->
+    <section class="container" style="padding-top: 20px !important; padding-bottom: 80px !important;">
+        <div class="cta-banner">
+            <div class="cta-left">
+                <div class="cta-icon-box">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </div>
+                <div class="cta-text">
+                    <span class="cta-subtitle">Let's Work Together</span>
+                    <h3>Have a Project in Mind?</h3>
+                    <p>Contact me and let's create something amazing together.</p>
+                </div>
+            </div>
+            
+            <div class="cta-right" style="display: flex; gap: 15px; flex-wrap: wrap;">
+                <a href="mailto:januxdig@gmail.com" class="btn-primary" style="margin-bottom: 0; background: transparent; border: 1px solid var(--glass-border); color: #25D366;">
+                    <img src="https://img.icons8.com/?size=48&id=qyRpAggnV0zH&format=png" alt="Email" style="width: 24px; height: 24px;">
+                    Email Me
+                </a>
+                <a href="https://wa.me/message/FFXQ6XWVXLOMD1" class="btn-primary" style="margin-bottom: 0; background: #25D366; color: #ffffff; border: none;">
+                    WhatsApp 
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px;">
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- =========================================
+         FOOTER SECTION
+    ========================================= -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid-row">
+
+                <div class="footer-logo-col">
+                    <img src="assets/logodark.png" alt="Janux Digital" class="footer-logo-img logo-dark" onerror="this.src='https://placehold.co/150x50/000000/ffffff?text=Janux+Digital'">
+                    <img src="assets/logodark.png" alt="Janux Digital" class="footer-logo-img logo-light" onerror="this.src='https://placehold.co/150x50/ffffff/000000?text=Janux+Digital'">
+                </div>
+
+                <div class="footer-v-line"></div>
+
+                <div class="footer-contact-col">
+                    <h4 class="footer-head-green">Contact Information</h4>
+                    <a href="mailto:januxdig@gmail.com" class="footer-contact-link">
+                        <img src="https://img.icons8.com/?size=48&id=qyRpAggnV0zH&format=png" alt="Email" style="width: 20px; height: 20px;">
+                        januxdig@gmail.com
+                    </a>
+                    <a href="https://wa.me/message/FFXQ6XWVXLOMD1" class="footer-contact-link">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 20px; height: 20px; ">
+                        +94713071106
+                    </a>
+                </div>
+
+                <div class="footer-v-line"></div>
+
+                <div class="footer-payment-col">
+                    <h4 class="footer-head-green">Payment Methods</h4>
+                    <div class="payment-badges">
+                        <div class="pay-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"></div>
+                        <div class="pay-badge"><img src="https://vectorseek.com/wp-content/uploads/2023/09/Payoneer-New-2021-Logo-Vector.svg-.png" alt="Payoneer"></div>
+                        <div class="pay-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1e/Ria_Main_Logo_Descriptor_Color_RGB.png" alt="Ria"></div>
+                        <div class="pay-badge"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAPvfATaZfmrEIr1LZMPUn8tZzXXXtgVm3KDml0IHowQ&s=10" alt="Visa"></div>
+                        <div class="pay-badge"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b7/MasterCard_Logo.svg" alt="Mastercard"></div>
+                        <div class="pay-badge"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXE6MhZGUWK2b9YeFOizAr3M_JRFhTdR0LhpAo_MkQPF3om5iozaHvll8&s=10" alt="Sampath Bank"></div>
+                    </div>
+                </div>
+
+                <div class="footer-v-line"></div>
+
+                <div class="footer-social-col">
+                    <h4 class="footer-head-white">Follow Me</h4>
+                    <div class="social-circles">
+                        <a href="https://web.facebook.com/JanakaSKWije" class="soc-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                        <a href="https://dribbble.com/janaka-wijerathna" class="soc-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"></path></svg></a>
+                        <a href="https://www.behance.net/Janakawijerathna" class="soc-circle"><span style="font-weight: 700; font-size: 13px;">Be</span></a>
+                        <a href="https://www.linkedin.com/in/janaka-wijerathna/" class="soc-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom-bar">
+                <p>© 2026 Janux Digital. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#" onclick="openFooterXpop('terms', event)">Terms & Conditions</a>
+                    <a href="#" onclick="openFooterXpop('faq', event)">FAQ</a>
+                </div>
+                <p>Design • Create • Inspire</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer Document Modal (FAQ / Terms) -->
+    <div id="footer-xpop-modal" class="xpop-overlay" onclick="closeFooterXpop(event)">
+        <div class="service-xpop-content text-modal-content" onclick="event.stopPropagation()">
+            <button class="xpop-close" onclick="closeFooterXpop()">✕</button>
+            <div id="footer-xpop-body">
+                <!-- JS Injects FAQ/Terms Here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- =========================================
+         MOBILE BOTTOM NAVIGATION (Apple Style)
+    ========================================= -->
+    <nav class="mobile-bottom-nav">
+        <!-- The sliding liquid glass pill -->
+        <div class="nav-indicator"></div>
+        
+        <a href="#home" class="active" data-i18n="nav_home">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+        </a>
+      
+        <a href="#experience" data-i18n="nav_exp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+            <span>Experience</span>
+        </a>
+        <a href="services.html" data-i18n="nav_services">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 12 12 17 22 12"></polyline><polyline points="2 17 12 22 22 17"></polyline></svg>
+            <span>Services</span>
+        </a>
+        <a href="portfolio.html" data-i18n="nav_portfolio">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+            <span>Portfolio</span>
+        </a>
+    </nav>
+
+    <!-- =========================================
+         FLOATING WIDGETS
+    ========================================= -->
+    
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTopBtn" class="scroll-to-top" onclick="scrollToTop()">
+        ↑
+    </button>
+
+    <!-- Floating Contact Widget -->
+    <div class="floating-contact-wrapper" id="floating-contact">
+        <div class="floating-options">
+            <a href="mailto:januxdig@gmail.com" class="float-btn email-float">
+                <div class="float-icon-box" style="background: #ffffff; color: #000;"><img src="https://img.icons8.com/?size=48&id=qyRpAggnV0zH&format=png" alt="Email" style="width: 24px; height: 24px;"></div>
+                <span>Email Me</span>
+            </a>
+            <a href="https://wa.me/message/FFXQ6XWVXLOMD1" class="float-btn wa-float">
+                <div class="float-icon-box" style="background: transparent;">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 40px; height: 40px; margin-left: 10px;">
+                </div>
+                <span>WhatsApp</span>
+            </a>
+        </div>
+        
+        <button class="float-main-btn" onclick="toggleFloatingContact()">     
+            <span class="float-text" style="color: #1d3317;">Let's Talk</span>
+            <span class="float-close">✕</span>
+        </button>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+<!-- =========================================
+     AI CHATBOT WIDGET
+========================================= -->
+<div class="chatbot-wrapper" id="chatbot-widget">
+    <!-- Chat Window -->
+    <div class="chatbot-window" id="chatbot-window">
+        <div class="chatbot-header">
+            <div class="chatbot-header-info">
+                <div class="chatbot-avatar">
+                    <img src="assets/botico.svg" alt="Janux AI" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+                <div>
+                    <h4>Janux Assistant</h4>
+                    <span class="chatbot-status">Online</span>
+                </div>
+            </div>
+            <button class="chatbot-close-btn" onclick="toggleChatbot()">✕</button>
+        </div>
+
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="chat-bubble bot">
+                Hello! I am Janaka's AI assistant. Ask me anything about design services, pricing, timelines, or revision policies!
+            </div>
+        </div>
+
+        <form class="chatbot-input-area" id="chatbot-form" onsubmit="handleChatSubmit(event)">
+            <input 
+                type="text" 
+                id="chatbot-input" 
+                placeholder="Ask about pricing, turnaround..." 
+                autocomplete="off" 
+                required 
+            />
+            <button type="submit" aria-label="Send Message">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <!-- Toggle Floating Button -->
+<button class="chatbot-toggle-btn" onclick="toggleChatbot()" aria-label="Open AI Chat">
+    <svg id="bot-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 43.06 43.06">
+      <defs>
+        <style>
+          .cls-1 { filter: url(#outer-glow-1); }
+          .cls-1, .cls-2 { fill: #5bcd5a; }
+          .cls-3 { fill: #acb6c1; }
+          .cls-4 { fill: none; }
+          .cls-5 { fill: url(#linear-gradient-4); }
+          .cls-6 { fill: url(#radial-gradient); }
+          .cls-7 { fill: url(#linear-gradient-2); opacity: .39; }
+          .cls-7, .cls-8 { mix-blend-mode: multiply; }
+          .cls-9, .cls-8 { fill: url(#linear-gradient-3); }
+          .cls-10 { isolation: isolate; }
+          .cls-2 { filter: url(#outer-glow-2); }
+          .cls-11 { fill: url(#linear-gradient); }
+          .cls-12 { clip-path: url(#clippath); }
+          .cls-8 { opacity: .36; }
+        </style>
+        <linearGradient id="linear-gradient" x1="8.52" y1="38.77" x2="34.22" y2="4.73" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#aeb9c4"/>
+          <stop offset=".2" stop-color="#c3ccd5"/>
+          <stop offset=".44" stop-color="#d4dbe2"/>
+          <stop offset=".69" stop-color="#dee5ea"/>
+          <stop offset="1" stop-color="#e2e8ed"/>
+        </linearGradient>
+        <clipPath id="clippath">
+          <path class="cls-4" d="M43.06,21.53c0,11.89-9.64,21.53-21.53,21.53-3.43,0-6.67-.8-9.55-2.23-1.61-.8-3.11-1.79-4.46-2.95-1.51-1.3-2.84-2.8-3.95-4.46-2.26-3.41-3.58-7.5-3.58-11.9C0,9.64,9.64,0,21.53,0s21.53,9.64,21.53,21.53Z"/>
+        </clipPath>
+        <linearGradient id="linear-gradient-2" x1="32.72" y1="43.91" x2="13.06" y2="43.2" xlink:href="#linear-gradient"/>
+        <linearGradient id="linear-gradient-3" x1="4.93" y1="32.76" x2="2.65" y2="29.89" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#aeb9c4"/>
+          <stop offset="1" stop-color="#e2e8ed"/>
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1="14.15" y1="34.23" x2="27.43" y2="6.53" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#313a43"/>
+          <stop offset="1" stop-color="#000"/>
+        </linearGradient>
+        <radialGradient id="radial-gradient" cx="29.75" cy="8.48" fx="29.75" fy="8.48" r="31.06" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#222a33"/>
+          <stop offset=".15" stop-color="#1d252d"/>
+          <stop offset=".73" stop-color="#0f171e"/>
+        </radialGradient>
+        <filter id="outer-glow-1" x="10.57" y="10.81" width="11.28" height="14.16" filterUnits="userSpaceOnUse">
+          <feOffset dx="0" dy="0"/>
+          <feGaussianBlur result="blur" stdDeviation="1"/>
+          <feFlood flood-color="#16f70f" flood-opacity=".54"/>
+          <feComposite in2="blur" operator="in"/>
+          <feComposite in="SourceGraphic"/>
+        </filter>
+        <filter id="outer-glow-2" x="21.77" y="10.53" width="12" height="15" filterUnits="userSpaceOnUse">
+          <feOffset dx="0" dy="0"/>
+          <feGaussianBlur result="blur-2" stdDeviation="1"/>
+          <feFlood flood-color="#16f70f" flood-opacity=".54"/>
+          <feComposite in2="blur-2" operator="in"/>
+          <feComposite in="SourceGraphic"/>
+        </filter>
+      </defs>
+      <g class="cls-10">
+        <g id="Layer_2" data-name="Layer 2">
+          <g id="Layer_1-2" data-name="Layer 1">
+            <g>
+              <path class="cls-11" d="M43.06,21.53c0,11.89-9.64,21.53-21.53,21.53-3.43,0-6.67-.8-9.55-2.23-1.61-.8-3.11-1.79-4.46-2.95-1.51-1.3-2.84-2.8-3.95-4.46-2.26-3.41-3.58-7.5-3.58-11.9C0,9.64,9.64,0,21.53,0s21.53,9.64,21.53,21.53Z"/>
+              <g class="cls-12">
+                <ellipse class="cls-7" cx="23.82" cy="43.59" rx="17.14" ry="5.68"/>
+              </g>
+              <path class="cls-9" d="M3.31,25.23s-3.57,6.93-2.62,7.98c.58.63,1.61.76,2.35.76.48,0,.96-.11,1.39-.32l4.2-2"/>
+              <path class="cls-8" d="M3.31,25.23s-3.57,6.93-2.62,7.98c.58.63,1.61.76,2.35.76.48,0,.96-.11,1.39-.32l4.2-2"/>
+              <path class="cls-3" d="M21.19,3.17C10.22,3.17,1.32,10.59,1.32,19.74c0,2.26.55,4.41,1.54,6.37l-1,3.86c-.26.94.18,1.77,1.39,1.89l4.79.09c1.45,1.05,3.23,2.23,5,2.9,2.49.94,5.25,1.46,8.16,1.46,10.97,0,19.87-7.42,19.87-16.57S32.17,3.17,21.19,3.17Z"/>
+              <path class="cls-5" d="M21.19,3.62C10.52,3.62,1.87,10.75,1.87,19.54c0,2.05.48,4.01,1.34,5.81.1.2.12.43.06.64l-1.01,3.65c-.25.9.44,1.79,1.4,1.81l4.61.09c.18,0,.35.06.5.16,1.35.94,2.86,1.74,4.5,2.35,2.42.9,5.11,1.4,7.93,1.4,10.67,0,19.32-7.12,19.32-15.91S31.86,3.62,21.19,3.62Z"/>
+              <path class="cls-6" d="M21.19,5.54c-9.39,0-16.99,6.27-16.99,14,0,1.81.42,3.53,1.18,5.12.08.17.1.37.05.55l-.89,3.22c-.22.79.38,1.57,1.23,1.59l4.06.08c.16,0,.3.05.43.14,1.19.83,2.52,1.53,3.96,2.07,2.13.79,4.49,1.23,6.98,1.23,9.39,0,16.99-6.27,16.99-14s-7.61-14-16.99-14Z"/>
+            </g>
+            
+            <!-- NEW: Grouped the eyes and added the animation classes -->
+            <g id="bot-eyes-group">
+                <rect class="cls-1 bot-eye left-eye" x="13.79" y="14.04" width="4.94" height="7.83" rx="2.47" ry="2.47"/>
+                <rect class="cls-2 bot-eye right-eye" x="24.94" y="14.04" width="4.94" height="7.83" rx="2.47" ry="2.47"/>
+            </g>
+            
+          </g>
+        </g>
+      </g>
+    </svg>
+</button>
+</div>
+
+
+    
+</body>
+</html>
